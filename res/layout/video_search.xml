@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout android:id="@+id/search_container"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_weight="1">
+        <EditText
+            android:id="@+id/query"
+            android:nextFocusDown="@+id/search"
+            android:nextFocusRight="@+id/search"
+            android:hint="Search Captioned Videos"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/search"
+            android:contentDescription="Search Button"
+            android:nextFocusUp="@id/query"
+            android:nextFocusLeft="@id/query"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@android:drawable/ic_search_category_default"
+            android:paddingLeft="35dp"
+            android:paddingRight="35dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <ListView
+	    android:id="@+id/video_list"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_below="@id/search_container"
+    />
+</RelativeLayout>
