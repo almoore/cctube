@@ -1,0 +1,1 @@
+This Android application is Casey Burkhardt's submission to Google I/O's 2011 Last Call - Round 2 Accessibility challenge.
